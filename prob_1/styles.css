@@ -1,0 +1,165 @@
+:root {
+    --whiteColor: white;
+    --blackColor: black;
+    --buttonColor: #005ba5;
+    --gray: #3f3f3f;
+}
+
+html {
+    display: flex;
+    flex-flow: column;
+    background-color:var(--blackColor);
+    color: var(--whiteColor);
+    width: 100%;
+    height: 100%;
+}
+
+/* body containers */
+body {
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+}
+
+header {
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 85%;
+    height: 100%;
+    padding: 24px 0px 24px 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+main {
+    place-items: center;
+    align-items: center;
+    display: grid;
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    border-radius: 16px;
+    width: 85%;
+    height: 85%;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+}
+
+* {
+    /* border: solid; */
+}
+
+/* grid templates */
+.grid-main-template {
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 90%;
+    height: 90%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.grid-clock {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+}
+
+/* Flex direction */
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* justify content | align */
+.justify-start {
+    justify-content: start;
+}
+
+.justify-text-start {
+    justify-self: start;
+}
+
+.justify-text-end {
+    justify-self: end;
+}
+
+/* width */
+.width-xlg {
+    width: 100%;
+}
+
+.width-lg {
+    width: 85%;
+}
+
+.width-s {
+    width: 20%;
+}
+
+/* content styles */
+.clock {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #245953;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.line {
+    border: solid;
+    stroke: white;
+    stroke-linecap: round;
+    transform-origin: 0% 100%;
+    position: absolute;
+    justify-self: start;
+    margin-left: 120px;
+}
+
+.seconds {
+    stroke-width: 1px;
+    color: #005ba5;
+    width: 100px;
+}
+
+.minutes {
+    stroke-width: 1px;
+    color: #00a54a;
+    width: 80px;
+}
+
+.hours {
+    stroke-width: 5px;
+    color: #a50016;
+    width: 40px;
+}
+
+.point {
+    transform-origin: 0% 100%;
+    width: 5px;
+    height: 5px;
+    background-color: aquamarine;
+    border-radius: 100%;
+    position: absolute;
+    justify-self: start;
+    margin-left: 118px;
+}
